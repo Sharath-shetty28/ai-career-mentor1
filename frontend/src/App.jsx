@@ -21,7 +21,7 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/generate", {
+      const res = await fetch("https://ai-career-mentor1.onrender.com/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userInput: input }),
